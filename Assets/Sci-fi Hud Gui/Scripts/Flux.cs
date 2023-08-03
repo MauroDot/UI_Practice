@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-using UnityEngine;
 using UnityEngine.UI;
 
-public class FluctuatingTransparency : MonoBehaviour
+public class Flux : MonoBehaviour
 {
     public float _minAlpha = 0.3f; // The minimum alpha value (transparency).
     public float _maxAlpha = 1f;   // The maximum alpha value (opaque).

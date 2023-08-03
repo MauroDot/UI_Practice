@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 70
-  rotateClockwise: 1
+  rotateClockwise: 0
 --- !u!114 &146014809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2526,7 +2526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &751369166
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2559,7 +2559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 33
-  rotateClockwise: 1
+  rotateClockwise: 0
 --- !u!114 &751369168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4311,7 +4311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 15
-  rotateClockwise: 1
+  rotateClockwise: 0
 --- !u!114 &1469171564
 MonoBehaviour:
   m_ObjectHideFlags: 0

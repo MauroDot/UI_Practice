@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CircleRotation : MonoBehaviour
+public class Rotate : MonoBehaviour
 {
     public float rotationSpeed = 50f; // The initial rotation speed, can be adjusted in the Inspector.
     public bool rotateClockwise = true; // Set this to false if you want the circle to rotate counterclockwise.

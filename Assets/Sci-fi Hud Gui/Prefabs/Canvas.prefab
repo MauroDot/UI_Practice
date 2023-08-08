@@ -1557,6 +1557,7 @@ RectTransform:
   - {fileID: 5179757012259389315}
   - {fileID: 5374546982310949629}
   - {fileID: 7004616790405164791}
+  - {fileID: 8721041206912279878}
   m_Father: {fileID: 6658871872644957519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1690,8 +1691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 60
-  rotateClockwise: 0
+  rotationSpeed: 10
+  rotateClockwise: 1
 --- !u!1 &2477181024952118253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,7 +1908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5668723316683025063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2415,8 +2416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 40
-  rotateClockwise: 1
+  rotationSpeed: 7.5
+  rotateClockwise: 0
 --- !u!1 &3549413577236724356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,7 +3395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
+  rotationSpeed: 6
   rotateClockwise: 1
 --- !u!1 &4952113248468163425
 GameObject:
@@ -3576,7 +3577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 15
-  rotateClockwise: 0
+  rotateClockwise: 1
 --- !u!1 &5188707773401884811
 GameObject:
   m_ObjectHideFlags: 0
@@ -4344,6 +4345,112 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &5802607086127886521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8721041206912279878}
+  - component: {fileID: 7016678733461778508}
+  - component: {fileID: 1199223715203391002}
+  - component: {fileID: 2120694796544524255}
+  - component: {fileID: 5397001155482432636}
+  m_Layer: 5
+  m_Name: Image (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8721041206912279878
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802607086127886521}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6283987, y: 0.6290171, z: 0.42734426}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5546043320141009587}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.1682, y: 0.75848}
+  m_SizeDelta: {x: 512, y: 512}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7016678733461778508
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802607086127886521}
+  m_CullTransparentMesh: 1
+--- !u!114 &1199223715203391002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802607086127886521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.85568786, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b6a52e50c2a4463418b95f25bb4d163c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2120694796544524255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802607086127886521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 90
+  rotateClockwise: 1
+--- !u!114 &5397001155482432636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802607086127886521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345451469f54d1047a08ded500a2018f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minAlpha: 0
+  _maxAlpha: 1
+  _fluctuationSpeed: 0.3
 --- !u!1 &5912100984912819982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4573,8 +4680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 70
-  rotateClockwise: 0
+  rotationSpeed: 50
+  rotateClockwise: 1
 --- !u!114 &5745806476299672084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5288,8 +5395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 70
-  rotateClockwise: 1
+  rotationSpeed: 40
+  rotateClockwise: 0
 --- !u!114 &5583445448607137534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5640,7 +5747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.5054996, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5669,7 +5776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb98b45f6732a74194a2ba52fbf95e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
+  rotationSpeed: 80
   rotateClockwise: 0
 --- !u!114 &2674375289245719789
 MonoBehaviour:

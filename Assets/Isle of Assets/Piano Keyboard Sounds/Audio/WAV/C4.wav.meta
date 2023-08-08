@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 4aac9e67b2dc0bd4aaf0eb05ca54cbcf
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 1
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 225462
+  packageName: Piano Keyboard Sounds
+  packageVersion: 1.0.6
+  assetPath: Assets/Isle of Assets/Piano Keyboard Sounds/Audio/WAV/C4.wav
+  uploadId: 536035

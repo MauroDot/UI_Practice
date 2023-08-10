@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: fe1afd291046c4b8a96e7a6434b232f2
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 7
+  defaultSettings:
+    serializedVersion: 2
+    loadType: 1
+    sampleRateSetting: 0
+    sampleRateOverride: 0
+    compressionFormat: 0
+    quality: 1
+    conversionMode: 0
+    preloadAudioData: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87033
+  packageName: 'Beat Variety Drum Loop: Dance'
+  packageVersion: 1.0
+  assetPath: Assets/BeatVarietyDrumLoopDance/03_Swing_BPM129/Swing_06.wav
+  uploadId: 171698

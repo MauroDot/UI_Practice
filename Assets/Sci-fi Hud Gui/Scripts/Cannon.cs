@@ -25,7 +25,7 @@ public class CannonController : MonoBehaviour
     {
         GameObject projectile = Instantiate(_cannonBall, _instantiationPoint.transform.position, _instantiationPoint.transform.rotation);
 
-        projectile.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(500, 0, 0));
+        projectile.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(1000, 0, 0));
 
         // Play firing sound effect.
         _firingAudioSource.Play();

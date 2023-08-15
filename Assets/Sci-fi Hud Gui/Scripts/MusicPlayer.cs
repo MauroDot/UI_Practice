@@ -1,17 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
     public AudioSource _audioSource;
     public TMP_Text _trackNameText;
     public AudioClip[] _tracks;
-    public TMP_Dropdown _trackDropdown; // Reference to the UI Dropdown for the track selection.
+    public TMP_Dropdown _trackDropdown;
+    public Toggle _repeatToggle;
+    public Button _shuffleOnButton;
+    public Button _shuffleOffButton;
 
     private bool _isPaused = false;
+    private bool _isRepeating = false;
+    private bool _isShuffling = false;
+    private int _currentTrackIndex = 0;
 
     private void Start()
     {
@@ -26,6 +32,31 @@ public class MusicPlayer : MonoBehaviour
 
         // Set the default track to the first one.
         PlayTrack(0);
+
+        // Assign click event handlers for shuffle buttons
+        _shuffleOnButton.onClick.AddListener(TurnShuffleOn);
+        _shuffleOffButton.onClick.AddListener(TurnShuffleOff);
+    }
+
+    private void Update()
+    {
+        // Check if the current track has finished playing.
+        if (!_audioSource.isPlaying && !_isPaused)
+        {
+            if (_isRepeating)
+            {
+                PlayTrack(_currentTrackIndex);
+            }
+            else if (_isShuffling)
+            {
+                int randomTrackIndex = Random.Range(0, _tracks.Length);
+                PlayTrack(randomTrackIndex);
+            }
+            else
+            {
+                NextTrack();
+            }
+        }
     }
 
     public void PlayPause()
@@ -38,7 +69,6 @@ public class MusicPlayer : MonoBehaviour
         {
             _audioSource.Pause();
         }
-
         _isPaused = !_isPaused;
     }
 
@@ -46,27 +76,50 @@ public class MusicPlayer : MonoBehaviour
     {
         if (index >= 0 && index < _tracks.Length)
         {
+            _currentTrackIndex = index;
             _audioSource.Stop();
             _audioSource.clip = _tracks[index];
             _audioSource.Play();
             _trackNameText.text = _tracks[index].name;
+
+            // Set the dropdown value to the current track index.
+            _trackDropdown.value = _currentTrackIndex;
+            _trackDropdown.RefreshShownValue();
         }
     }
 
     public void NextTrack()
     {
-        int nextTrackIndex = (_trackDropdown.value + 1) % _tracks.Length;
-        _trackDropdown.value = nextTrackIndex;
+        int nextTrackIndex = (_currentTrackIndex + 1) % _tracks.Length;
         PlayTrack(nextTrackIndex);
     }
 
     public void PreviousTrack()
     {
-        int prevTrackIndex = (_trackDropdown.value - 1 + _tracks.Length) % _tracks.Length;
-        _trackDropdown.value = prevTrackIndex;
+        int prevTrackIndex = (_currentTrackIndex - 1 + _tracks.Length) % _tracks.Length;
         PlayTrack(prevTrackIndex);
     }
+
+    public void ToggleRepeat()
+    {
+        _isRepeating = !_isRepeating;
+    }
+
+    public void TurnShuffleOn()
+    {
+        _isShuffling = true;
+    }
+
+    public void TurnShuffleOff()
+    {
+        _isShuffling = false;
+    }
 }
+
+
+
+
+
 
 
 

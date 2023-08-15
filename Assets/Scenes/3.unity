@@ -746,10 +746,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3427100120139612612}
-    - target: {fileID: 3602361921572949328, guid: d86010cf97408114b99238302d3445ac, type: 3}
-      propertyPath: m_text
-      value: Back to Main Menu
-      objectReference: {fileID: 0}
     - target: {fileID: 5298985529666249072, guid: d86010cf97408114b99238302d3445ac, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -834,18 +830,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1332594417}
-    - target: {fileID: 6416690456218441771, guid: d86010cf97408114b99238302d3445ac, type: 3}
-      propertyPath: m_text
-      value: Music Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6416690456218441771, guid: d86010cf97408114b99238302d3445ac, type: 3}
-      propertyPath: m_fontSize
-      value: 19.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6416690456218441771, guid: d86010cf97408114b99238302d3445ac, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 19.48
-      objectReference: {fileID: 0}
     - target: {fileID: 6835390707451021424, guid: d86010cf97408114b99238302d3445ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

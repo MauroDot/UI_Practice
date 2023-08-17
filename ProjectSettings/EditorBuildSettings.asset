@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cannon.unity
     guid: 05c7858081aee174abe863449e3a797d
+  - enabled: 1
+    path: Assets/Scenes/SlideShow.unity
+    guid: e495ad91ff14727409497b423639ded8
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -6,15 +6,6 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     [SerializeField] private Toggle[] _toggle;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void Toggle0True()
     {

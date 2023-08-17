@@ -11,16 +11,6 @@ public class CannonController : MonoBehaviour
     [SerializeField] private AudioSource _turningAudioSource;
     [SerializeField] private AudioSource _firingAudioSource;
 
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-
     public void FireGun()
     {
         GameObject projectile = Instantiate(_cannonBall, _instantiationPoint.transform.position, _instantiationPoint.transform.rotation);

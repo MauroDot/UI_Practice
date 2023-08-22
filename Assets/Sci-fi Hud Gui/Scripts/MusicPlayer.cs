@@ -47,18 +47,12 @@ public class MusicPlayer : MonoBehaviour
             {
                 PlayTrack(_currentTrackIndex);
             }
-            else if (_isShuffling)
-            {
-                int randomTrackIndex = Random.Range(0, _tracks.Length);
-                PlayTrack(randomTrackIndex);
-            }
             else
             {
                 NextTrack();
             }
         }
     }
-
     public void PlayPause()
     {
         if (_isPaused)
@@ -71,7 +65,6 @@ public class MusicPlayer : MonoBehaviour
         }
         _isPaused = !_isPaused;
     }
-
     public void PlayTrack(int index)
     {
         if (index >= 0 && index < _tracks.Length)
@@ -87,10 +80,23 @@ public class MusicPlayer : MonoBehaviour
             _trackDropdown.RefreshShownValue();
         }
     }
-
     public void NextTrack()
     {
-        int nextTrackIndex = (_currentTrackIndex + 1) % _tracks.Length;
+        int nextTrackIndex;
+
+        if (_isShuffling)
+        {
+            do
+            {
+                nextTrackIndex = Random.Range(0, _tracks.Length);
+            }
+            while (nextTrackIndex == _currentTrackIndex); // Ensure the next track isn't the same as the current one
+        }
+        else
+        {
+            nextTrackIndex = (_currentTrackIndex + 1) % _tracks.Length;
+        }
+
         PlayTrack(nextTrackIndex);
     }
 

@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SlideShow.unity
     guid: e495ad91ff14727409497b423639ded8
+  - enabled: 1
+    path: Assets/Scenes/7.unity
+    guid: 480b844e0a606ad40bbbf02771fc47a6
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

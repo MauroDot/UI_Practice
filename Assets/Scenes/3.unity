@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc9952de26258545af72fc87226242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadPanel: {fileID: 3203592602634440641}
+  _loadPanel: {fileID: 0}
   _loadSlider: {fileID: 5702695243802384777}
   _loadText: {fileID: 8045414276754012346}
 --- !u!224 &34293558360524040
@@ -1683,7 +1683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7939329588329125038
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1990,6 +1990,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3427100119243607915}
+    - target: {fileID: 1013330302700600897, guid: d86010cf97408114b99238302d3445ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2352865661802169146, guid: d86010cf97408114b99238302d3445ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2110,6 +2114,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3427100120602046018}
+    - target: {fileID: 7765609595162250575, guid: d86010cf97408114b99238302d3445ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8716448099598709334, guid: d86010cf97408114b99238302d3445ac, type: 3}
       propertyPath: m_Name
       value: Piano_Canvas

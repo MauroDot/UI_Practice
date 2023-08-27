@@ -910,8 +910,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: User Interface
-  metroPackageVersion: 
+  metroPackageName: UserInterface
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -919,7 +919,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: User Interface
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: User Interface
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

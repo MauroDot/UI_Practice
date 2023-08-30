@@ -29,5 +29,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/9.unity
     guid: 14de3b0fae2405c4e83c6ebc5565e8ff
+  - enabled: 1
+    path: Assets/Scenes/Subtraction.unity
+    guid: 39c18d41ca64f0b40b4b058bc8b453fa
+  - enabled: 1
+    path: Assets/Scenes/Division.unity
+    guid: de409fcc78cac1e4a9c7f68b43caea71
+  - enabled: 1
+    path: Assets/Scenes/Trig.unity
+    guid: f73c8114b7e2c7b41ada6da59c844adc
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

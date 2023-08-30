@@ -37,7 +37,13 @@ public class Flux : MonoBehaviour
 
         // Reverse the direction of fluctuation when reaching the min or max alpha value.
         if (_currentAlpha <= _minAlpha || _currentAlpha >= _maxAlpha)
+        {
             _increasingAlpha = !_increasingAlpha;
+
+            // Change to a new random color
+            Color newColor = new Color(Random.value, Random.value, Random.value, _currentAlpha);
+            _image.color = newColor;
+        }
     }
 }
 

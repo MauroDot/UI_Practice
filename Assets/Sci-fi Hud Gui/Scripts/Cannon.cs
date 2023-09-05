@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class CannonController : MonoBehaviour
+public class Cannon : MonoBehaviour
 {
     [SerializeField] private GameObject _cannonBall;
     [SerializeField] private GameObject _instantiationPoint;

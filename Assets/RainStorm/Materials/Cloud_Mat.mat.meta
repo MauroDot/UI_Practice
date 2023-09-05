@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dbe4e9773ca086f459cc309c2559c9bd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197975
+  packageName: Realistic Rain Storm Effect VFX Particle System
+  packageVersion: 1.0
+  assetPath: Assets/RainStorm/Materials/Cloud_Mat.mat
+  uploadId: 439908

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 499496834450373637}
   - component: {fileID: 5248138072011520568}
   - component: {fileID: -5317916902778168272}
+  - component: {fileID: 3541068164948575977}
   m_Layer: 0
   m_Name: Cannon Ball
-  m_TagString: Untagged
+  m_TagString: Cannonball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,3 +134,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3541068164948575977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166443527640656157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b779e449942cf62428f72d6fc1de9700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionAudioSource: {fileID: 0}
+  _collisionSound: {fileID: 0}

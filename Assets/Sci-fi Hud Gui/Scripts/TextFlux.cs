@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
+using UnityEngine;
 
 public class FluxText : MonoBehaviour
 {
@@ -9,14 +10,14 @@ public class FluxText : MonoBehaviour
     public float _maxAlpha = 1f;   // The maximum alpha value (opaque).
     public float _fluctuationSpeed = 1f; // The speed at which the transparency fluctuates.
 
-    private Text _textComponent;
+    private TMP_Text _textComponent;
     private Color _originalColor;
     private float _currentAlpha;
     private bool _increasingAlpha = true;
 
     private void Start()
     {
-        _textComponent = GetComponent<Text>();
+        _textComponent = GetComponent<TMP_Text>();
         _originalColor = _textComponent.color;
         _currentAlpha = _originalColor.a;
     }

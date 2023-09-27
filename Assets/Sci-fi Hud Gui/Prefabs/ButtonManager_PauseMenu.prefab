@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8215435079330906522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6641645042400730148}
+  - component: {fileID: 5646194962469620135}
+  m_Layer: 0
+  m_Name: ButtonManager_PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6641645042400730148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215435079330906522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5646194962469620135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215435079330906522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c7a7a95ed852442853f3cccfe27c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPoint: {fileID: 0}
+  _ball: {fileID: 4032243013677967114, guid: fc6e0363d90c3f043a47cebcf977d9cc, type: 3}
+  _settingMenu: {fileID: 0}
+  _sliderVol: {fileID: 0}
+  minVolume: 0
+  maxVolume: 1
+  defaultVolume: 1
+  _balls:
+  - {fileID: 4032243013677967114, guid: fc6e0363d90c3f043a47cebcf977d9cc, type: 3}
+  - {fileID: 6411733497572556975, guid: c4015177a3587124ebfee6b4404951e3, type: 3}
+  - {fileID: 3904042802471512569, guid: 59c1ae56b4dc67447856d5326d9baf74, type: 3}
+  - {fileID: 4492470276021451330, guid: 9f355c58777acd041a2976823cd5b65e, type: 3}
+  - {fileID: 3293618554660161930, guid: f93ccafeb5d9e9044bdf8a19664d2994, type: 3}
+  - {fileID: 4894099876573951384, guid: 0a76ee17f12239649910eda249a61773, type: 3}
+  - {fileID: 4398296752363810909, guid: 99d8a99f46f300443bef4e1b0c4713df, type: 3}
+  - {fileID: 611899872417682518, guid: 26d9c60ba0205f3438befb8da93595a9, type: 3}
+  - {fileID: 45276593171583285, guid: c78176e6dabe46844ad3f5848f3e023f, type: 3}
+  - {fileID: 8376152575830322166, guid: 51040f0e5736a4444ae4f3bd200e0ee4, type: 3}
+  - {fileID: 4537147389863573663, guid: 884d7796c25871f4db422bda802e1c6c, type: 3}
+  - {fileID: 6681750122947378226, guid: 390e42fb713355b44b5b4f80daa93f87, type: 3}
+  - {fileID: 899920478205238831, guid: d2b0073373cecf74bbc957893433eed6, type: 3}
+  - {fileID: 5420872725951556674, guid: 96043d0c1c60f104289f4d42a10e17c6, type: 3}
+  - {fileID: 168730777225292221, guid: fbd794d3f299e0243b2809d35078d17a, type: 3}
+  _spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -516,6 +516,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!1 &278014198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1022,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!95 &686324215
 Animator:
   serializedVersion: 7
@@ -1616,6 +1618,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!95 &1289502851
 Animator:
   serializedVersion: 7
@@ -2172,7 +2175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1422758811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,6 +2263,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!95 &1592530836
 Animator:
   serializedVersion: 7
@@ -2444,6 +2448,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!95 &1711015597
 Animator:
   serializedVersion: 7
@@ -2890,6 +2895,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!114 &6315319012653688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3181,6 +3187,7 @@ MonoBehaviour:
   _minAlpha: 0
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!114 &658216691929575819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3230,6 +3237,7 @@ MonoBehaviour:
   _minAlpha: 0.1
   _maxAlpha: 1
   _fluctuationSpeed: 0.5
+  _colorChangeSpeed: 1
 --- !u!222 &847477180867971504
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3465,6 +3473,7 @@ MonoBehaviour:
   _minAlpha: 0
   _maxAlpha: 1
   _fluctuationSpeed: 0.3
+  _colorChangeSpeed: 1
 --- !u!114 &1280533233991187190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3582,6 +3591,7 @@ MonoBehaviour:
   _minAlpha: 0.1
   _maxAlpha: 1
   _fluctuationSpeed: 0.65
+  _colorChangeSpeed: 1
 --- !u!114 &1493434519995534281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,21 +3806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &2040554218378871101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2581171225274134085}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.404, y: 218.00392, z: 0}
-  m_LocalScale: {x: 0.57051855, y: 0.6417834, z: 1.7778}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4244224074145415408}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &2062200335700845847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4113,6 +4108,7 @@ MonoBehaviour:
   _minAlpha: 0.1
   _maxAlpha: 1
   _fluctuationSpeed: 0.5
+  _colorChangeSpeed: 1
 --- !u!222 &2549785458361802687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4121,22 +4117,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980319713138631972}
   m_CullTransparentMesh: 1
---- !u!1 &2581171225274134085
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2040554218378871101}
-  m_Layer: 0
-  m_Name: Button_Position
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!224 &2629728038027544148
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4226,6 +4206,7 @@ MonoBehaviour:
   _minAlpha: 0
   _maxAlpha: 0.5
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!114 &2840308481972825379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4241,6 +4222,7 @@ MonoBehaviour:
   _minAlpha: 0.1
   _maxAlpha: 1
   _fluctuationSpeed: 1
+  _colorChangeSpeed: 1
 --- !u!114 &2892429086607745617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4731,6 +4713,7 @@ MonoBehaviour:
   _minAlpha: 0.1
   _maxAlpha: 1
   _fluctuationSpeed: 1
+  _colorChangeSpeed: 1
 --- !u!114 &3988083236413824948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4746,6 +4729,7 @@ MonoBehaviour:
   _minAlpha: 0
   _maxAlpha: 0.5
   _fluctuationSpeed: 0.1
+  _colorChangeSpeed: 1
 --- !u!1 &3994431160275601722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,7 +4904,6 @@ RectTransform:
   - {fileID: 2629728038027544148}
   - {fileID: 1097292992190049285}
   - {fileID: 6042851827973356476}
-  - {fileID: 2040554218378871101}
   - {fileID: 3734261121264759064}
   - {fileID: 268099592}
   - {fileID: 1814345007}
@@ -5320,7 +5303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4872202410521652287
 GameObject:
   m_ObjectHideFlags: 0
@@ -5590,6 +5573,7 @@ MonoBehaviour:
   _minAlpha: 0.3
   _maxAlpha: 1
   _fluctuationSpeed: 0.2
+  _colorChangeSpeed: 1
 --- !u!114 &5140039786300672754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5657,22 +5641,6 @@ GameObject:
   - component: {fileID: 7548811375844830967}
   m_Layer: 5
   m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5225695119256176101
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8576769915779328669}
-  m_Layer: 0
-  m_Name: Button_Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6303,7 +6271,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5924937470135148994}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Brightness, Assembly-CSharp
         m_MethodName: AdjustBrightness
         m_Mode: 0
@@ -6598,6 +6566,7 @@ MonoBehaviour:
   _minAlpha: 0
   _maxAlpha: 1
   _fluctuationSpeed: 0.3
+  _colorChangeSpeed: 1
 --- !u!224 &6715762917786762280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6779,6 +6748,7 @@ MonoBehaviour:
   _minAlpha: 0
   _maxAlpha: 1
   _fluctuationSpeed: 1
+  _colorChangeSpeed: 1
 --- !u!222 &7017894796060695748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6841,6 +6811,7 @@ MonoBehaviour:
   _minAlpha: 0.1
   _maxAlpha: 1
   _fluctuationSpeed: 1
+  _colorChangeSpeed: 1
 --- !u!224 &7226429145905594836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6932,7 +6903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!223 &7447460212529649734
 Canvas:
   m_ObjectHideFlags: 0
@@ -7580,21 +7551,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 50
   rotateClockwise: 1
---- !u!4 &8576769915779328669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5225695119256176101}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8619948793962857128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8049,4 +8005,3 @@ SceneRoots:
   - {fileID: 4244224074145415408}
   - {fileID: 6159063133717063987}
   - {fileID: 5597414134994635535}
-  - {fileID: 8576769915779328669}

@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 81892767}
   - component: {fileID: 81892766}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Text_Countdown (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1940,6 +1940,7 @@ RectTransform:
   - {fileID: 1367344058}
   - {fileID: 264713335}
   - {fileID: 1209776903}
+  - {fileID: 845204278}
   - {fileID: 73978758}
   - {fileID: 829521552}
   m_Father: {fileID: 1395021081}
@@ -4214,14 +4215,14 @@ RectTransform:
   m_GameObject: {fileID: 845204277}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5174885, y: 3.1336617, z: 0.53771067}
+  m_LocalScale: {x: 1.4101001, y: 1.5061997, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1209776903}
+  m_Father: {fileID: 345342730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30.798056, y: 16.728409}
+  m_AnchoredPosition: {x: 0.18143082, y: 3.0192366}
   m_SizeDelta: {x: 73.165, y: 13.2309}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845204279
@@ -5911,7 +5912,6 @@ RectTransform:
   m_LocalScale: {x: 0.92923284, y: 0.48065168, z: 1.8597362}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 845204278}
   - {fileID: 423250957}
   m_Father: {fileID: 345342730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6196,7 +6196,7 @@ GameObject:
   - component: {fileID: 1247055740}
   - component: {fileID: 1247055739}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Text_IsPin (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7556,7 +7556,7 @@ GameObject:
   - component: {fileID: 1536592669}
   - component: {fileID: 1536592671}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text_Box (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

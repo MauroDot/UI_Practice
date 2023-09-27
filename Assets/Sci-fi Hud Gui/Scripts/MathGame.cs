@@ -4,44 +4,131 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-class MathGame : MonoBehaviour
+public class MathGame : MonoBehaviour
 {
-    [SerializeField] private TMP_Text[] _textFields;
-    [SerializeField] private TMP_InputField _inputField;
-    private int _number1;
-    private int _number2;
-    private int _hiddenAnswer;
+    [Header("UI Elements")]
+    [SerializeField] private TMP_Text questionText;
+    [SerializeField] private TMP_InputField answerInputField;
+    [SerializeField] private TMP_Text timerText;
+    [SerializeField] private TMP_Text roundText;
+    [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text feedbackText; // New UI element to show feedback
+
+    [Header("Game Settings")]
+    [SerializeField] private int rounds = 3;
+    [SerializeField] private int timerPerRound = 30;
+    private int currentRound = 0;
+    private int _score = 0;
+    private bool isPlaying = false;
+
+    private int correctAnswer;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource buttonAudioSource; // Drag and drop the AudioSource component here
+    [SerializeField] private AudioClip buttonClickSound; // Drag and drop the sound effect clip here
 
     private void Start()
     {
-        CreateNewQuestion();
-    }
-    private void CalculateAnswer()
-    {
-        _hiddenAnswer = _number1 + _number2;
-    }
-    public void AnswerQuestion()
-    {
-        if (int.Parse(_inputField.text) == _hiddenAnswer)
+        // Check if the AudioSource is attached, if not, add it
+        if (buttonAudioSource == null)
         {
-            _textFields[2].text = "Correct!";
+            buttonAudioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        StartNewRound();
+    }
+
+    private void StartNewRound()
+    {
+        if (currentRound < rounds)
+        {
+            isPlaying = true;  // This line is added
+
+            currentRound++;
+            roundText.text = $"Round: {currentRound}/{rounds}";
+            scoreText.text = $"Score: {_score}";
+            StartCoroutine(RoundTimer());
+            GenerateQuestion();
         }
         else
         {
-            _textFields[2].text = "Wrong, the correct answer is " + _hiddenAnswer;
+            // End the game here and show final score
+            scoreText.text = $"Total Score: {_score}";
+            // Save the score
+            ProfileManager.Instance.AddScoreToCurrentProfile(_score);
+            ProfileManager.Instance.UpdateStatsText();
         }
     }
-    public void NextQuestion()
+
+    private IEnumerator RoundTimer()
     {
-        CreateNewQuestion();
+        int timeLeft = timerPerRound;
+        while (timeLeft > 0 && isPlaying)
+        {
+            timerText.text = $"Time: {timeLeft}s";
+            yield return new WaitForSeconds(1);
+            timeLeft--;
+        }
+
+        // Time's up for this round
+        isPlaying = false;  // This line is added
+        StartNewRound();
     }
-    public void CreateNewQuestion()
+
+    private void GenerateQuestion()
     {
-        _number1 = Random.Range(2, 40);
-        _number2 = Random.Range(2, 40);
-        _textFields[0].text = _number1.ToString();
-        _textFields[1].text = _number2.ToString();
-        _textFields[2].text = "Solve";
-        CalculateAnswer();
+        int num1 = Random.Range(0, 10);
+        int num2 = Random.Range(0, 10);
+        correctAnswer = num1 + num2;
+
+        questionText.text = $"{num1} + {num2} = ?";
+    }
+
+    public void SubmitAnswer()
+    {
+        PlayButtonClickSound(); // Play the button click sound
+
+        if (int.Parse(answerInputField.text) == correctAnswer)
+        {
+            _score += 5;
+            feedbackText.text = "Correct! + 5 Points";
+        }
+        else
+        {
+            _score -= 3;
+            feedbackText.text = "Incorrect! - 3 Points";
+        }
+
+        // Hide feedback after 2 seconds
+        StartCoroutine(HideFeedbackAfterSeconds(2));
+        GenerateQuestion();
+    }
+
+    private IEnumerator HideFeedbackAfterSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        feedbackText.text = "";  // Clear feedback text
+    }
+
+    public void StartGameOnClick()
+    {
+        if (!isPlaying)
+        {
+            StartNewRound();
+        }
+    }
+
+    public int GetScore()
+    {
+        Debug.Log($"MathGame Score: {_score}");
+        return _score;
+    }
+
+    private void PlayButtonClickSound()
+    {
+        if (buttonAudioSource && buttonClickSound)
+        {
+            buttonAudioSource.PlayOneShot(buttonClickSound);
+        }
     }
 }
